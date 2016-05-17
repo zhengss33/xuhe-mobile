@@ -1,3 +1,12 @@
+/*header*/
+#header .title{
+    display: inline-block;
+    color: #1ab4c3;
+    font-size: 0.5rem;
+    font-weight: normal;
+    text-align: center;
+}
+
 /*banner*/
 .banner{
     width: 100%;
@@ -42,7 +51,6 @@
 }
 
 .medical-info p{
-    font-size: 0.34rem;
     line-height: 1.5;
 }
 
@@ -60,6 +68,7 @@
 
 .medical-desc figure .pic{
     width: 100%;
+    height: 2.59524rem;
     margin-bottom: 0.3rem;
     border-radius: 50%;
     overflow: hidden;
@@ -71,9 +80,6 @@
     height: 100%;
 }
 
-.medical-desc figure figcaption{
-    font-size: 0.34rem;
-}
 
 /*tools*/
 .tools{
@@ -91,8 +97,7 @@
 
 .tools p{
     width: 89%;
-    margin: 3.34rem auto 0.6rem;
-    font-size: 0.34rem;
+    margin: 3.4rem auto 0.6rem;
     line-height: 1.5;
 }
 
@@ -205,13 +210,10 @@
 }
 
 .hospital-intro h3{
-    font-size: 0.4rem;
+    font-size: 0.45rem;
     font-weight: 500;
 }
 
-.hospital-intro p{
-    font-size: 0.32rem;
-}
 
 .hospital-item .booking-btn{
     display: block;
