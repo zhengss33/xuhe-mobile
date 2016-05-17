@@ -1,3 +1,12 @@
+/*header*/
+#header .title{
+    display: inline-block;
+    color: #1ab4c3;
+    font-size: 0.44rem;
+    font-weight: normal;
+    text-align: center;
+}
+
 /*banner*/
 .banner{
     width: 100%;
@@ -9,6 +18,7 @@
     max-width: 1080px;
     margin: 0 auto;
     color: #555;
+    font-size: 0.34rem;
 }
 
 .main a{
@@ -35,31 +45,21 @@
     margin-top: 0.6rem;
 }
 
-.medical-info{
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.medical-info p{
-    font-size: 0.34rem;
-    line-height: 1.5;
-}
-
 .medical-desc{
-    width: 100%;
-    margin-top: 0.7rem;
+    width: 89%;
+    margin: 0.3rem auto 0;
 }
 
 .medical-desc figure{
     float: left;
-    width: 22.5%;
-    margin: 0.5rem 5.416666%;
+    width: 27%;
+    margin: 0 11% 0.64rem;
     text-align: center;
 }
 
 .medical-desc figure .pic{
     width: 100%;
+    height: 2.6rem;
     margin-bottom: 0.3rem;
     border-radius: 50%;
     overflow: hidden;
@@ -71,28 +71,28 @@
     height: 100%;
 }
 
-.medical-desc figure figcaption{
-    font-size: 0.34rem;
-}
-
 /*tools*/
 .tools{
     clear: both;
     width: 100%;
     margin-top: 0.6rem;
-    background: url(../images/japan_bg.png) no-repeat center top;
+    background: url(../images/Europe_bg.png) no-repeat left top #f0f3f6;
     background-size: cover;
     overflow: hidden;
 }
 
+.tools .con{
+    float: right;
+    width: 50%;
+    margin: 0 0.4rem 1rem 0; 
+}
+
 .tools h2{
     margin-top: 0.35rem;
+    text-align: left;
 }
 
 .tools p{
-    width: 89%;
-    margin: 3.34rem auto 0.6rem;
-    font-size: 0.34rem;
     line-height: 1.5;
 }
 
