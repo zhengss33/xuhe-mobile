@@ -1,0 +1,226 @@
+/*banner*/
+.banner{
+    width: 100%;
+    height: 5.6rem;
+}
+
+/*main*/
+.main{
+    max-width: 1080px;
+    margin: 0 auto;
+    color: #555;
+}
+
+.main a{
+    color: #555;
+}
+
+.main h2{
+    height: 1.35rem;
+    font-size: 0.56rem;
+    line-height:  1.35rem;
+    text-align: center;
+    font-weight: 500;
+    color: #1ab4c3;
+}
+
+.main .content figure a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*medical*/
+.medical{
+    margin-top: 0.6rem;
+}
+
+.medical-info{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.medical-info p{
+    font-size: 0.34rem;
+    line-height: 1.5;
+}
+
+.medical-desc{
+    width: 100%;
+    margin-top: 0.7rem;
+}
+
+.medical-desc figure{
+    float: left;
+    width: 22.5%;
+    margin: 0.5rem 5.416666%;
+    text-align: center;
+}
+
+.medical-desc figure .pic{
+    width: 100%;
+    margin-bottom: 0.3rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.medical-desc figure .pic img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.medical-desc figure figcaption{
+    font-size: 0.34rem;
+}
+
+/*tools*/
+.tools{
+    clear: both;
+    width: 100%;
+    margin-top: 0.6rem;
+    background: url(../images/japan_bg.png) no-repeat center top;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.tools h2{
+    margin-top: 0.35rem;
+}
+
+.tools p{
+    width: 89%;
+    margin: 3.34rem auto 0.6rem;
+    font-size: 0.34rem;
+    line-height: 1.5;
+}
+
+/*strengths*/
+.strengths{
+    margin-top: 0.6rem;
+}
+
+.strengths .content{
+    margin-top: 0.2rem;
+}
+
+.strengths .content figure{
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 4.4rem;
+    overflow: hidden;
+}
+
+.strengths .content figure img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.strengths .content figure figcaption{
+    position: absolute;
+    left: 0.4rem;
+    bottom: 0.4rem;
+    z-index: 100;
+    color: #fff;
+    font-size: 0.4rem;
+}
+
+
+/*hotel*/
+.hotel{
+    clear: both;
+    margin-top: 0.6rem;
+}
+
+.hotel .content{
+    margin-top: 0.2rem;
+}
+
+.hotel .content figure{
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 4.4rem;
+    overflow: hidden;
+}
+
+.hotel .content figure img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*hospital*/
+.hospital{
+    clear: both;
+    margin: 0.6rem 0 1.5rem;
+}
+
+.hospital .content{
+    margin-top: 0.2rem;
+}
+
+.hospital-item {
+    margin-bottom: 1rem;
+}
+
+.hospital-item .pic-box{
+    position: relative;
+    width: 100%;
+    height: 5.4rem;
+}
+
+.hospital-item .pic-box img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.hospital-item .pic-box figcaption{
+    position: absolute;
+    bottom: 0.75rem;
+    right: 0;
+    width: 2.9rem;
+    padding: 0.15rem 0;
+    color: #fff;
+    font-size: 0.3rem;
+    line-height: 1.5;
+    text-align: center;
+    background: #1ab4c3;
+}
+
+.hospital-item .pic-box figcaption span{
+    display: block;
+}
+
+.hospital-intro{
+    width: 89%;
+    padding: 0.4rem 0;
+    margin: 0 auto;
+}
+
+.hospital-intro h3{
+    font-size: 0.4rem;
+    font-weight: 500;
+}
+
+.hospital-intro p{
+    font-size: 0.32rem;
+}
+
+.hospital-item .booking-btn{
+    display: block;
+    width: 89%;
+    height: 1.3rem;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 0.4rem;
+    line-height: 1.3rem;
+    text-align: center;
+    border-radius: 3px;
+    background: #1ab4c3;
+}
