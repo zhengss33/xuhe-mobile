@@ -18,8 +18,9 @@ url('../iconfont/iconfont.svg') format('svg'); /* iOS 4.1- */
 body{
     margin: 0 auto;
     font-family: Tahoma, Helvetica, "Microsoft Yahei", "微软雅黑", Arial, STHeiti;
-    line-height: 150%;
     color: #333;
+    font-size: 0.4rem;
+    line-height: 1.5;
     background: #fff;
     -webkit-tap-highlight-color:rgba(0,0,0,0);
 }
@@ -146,7 +147,6 @@ footer .qrcode img{
 }
 
 footer p{
-    font-size: 0.26rem;
     line-height: 1.5;
     text-align: center;
 }

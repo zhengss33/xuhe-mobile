@@ -78,7 +78,6 @@
 }
 
 .physical-info p{
-    font-size: 0.34rem;
     line-height: 1.5;
 }
 
@@ -96,6 +95,7 @@
 
 .physical-desc figure .pic{
     width: 100%;
+    height: 2.43rem;
     margin-bottom: 0.3rem;
     border-radius: 50%;
     overflow: hidden;
@@ -107,9 +107,6 @@
     height: 100%;
 }
 
-.physical-desc figure figcaption{
-    font-size: 0.34rem;
-}
 
 /*butler*/
 .butler{
@@ -141,12 +138,12 @@
     bottom: 0.4rem;
     z-index: 100;
     color: #fff;
-    font-size: 0.24rem;
+    font-size: 0.34rem;
 }
 
 .butler .content figure figcaption span{
     display: block;
-    font-size: 0.4rem;
+    font-size: 0.45rem;
     line-height: 0.8rem;
 }
 
@@ -165,7 +162,7 @@
 
 .expert .content figure .pic{
     width: 100%;
-    height: 2.6rem;
+    height: 2.808rem;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -178,7 +175,6 @@
 
 .expert .content figure figcaption{
     height: 0.88rem;
-    font-size: 0.34rem;
     line-height: 0.88rem;
 }
 
@@ -193,7 +189,6 @@
     width: 89%;
     margin: 0 auto;
     text-align: center;
-    font-size: 0.34rem;
     line-height: 1.5;
 }
 
@@ -214,7 +209,6 @@
     width: 100%;
     height: 1.1rem;
     margin-bottom: 0.4rem;
-    font-size: 0.34rem;
     line-height: 1.1rem;
     box-sizing: border-box;
 }
@@ -223,7 +217,7 @@
     width: 100%;
     height: 100%;
     padding: 0;
-    font-size: 0.34rem;
+    font-size: 0.4rem;
     line-height: 1.1rem;
     text-indent: 0.33rem;
     border: 1px solid #cfcfcf;
@@ -234,7 +228,7 @@
     height: 100%;
     padding: 0;
     color: #fff;
-    font-size: 0.34rem;
+    font-size: 0.4rem;
     line-height: 1.1rem;
     border:none;
     vertical-align: middle;
@@ -268,7 +262,7 @@
 
 #serve-container ul .option{
     color: #333;
-    font-size: 0.34rem;
+    font-size: 0.4rem;
     text-indent: 0.33rem;
     margin: 0;
     border: none;
