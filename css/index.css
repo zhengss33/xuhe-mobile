@@ -1,45 +1,3 @@
-/*banner*/
-.banner{
-    clear: both;
-    max-width: 1080px;
-    margin: 0 auto;
-}
-
-.banner .slide-container{
-    width: 100%;
-    height: 5.6rem;
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-.banner .slide-container .slide li{
-    float: left;
-}
-
-
-.banner .slide-container .slide li img{
-    display: block;
-    width: 100%;
-}
-
-.banner .pagination{
-    text-align: center;
-}
-
-.banner .pagination li{
-    display: inline-block;
-    width: 0.2rem;
-    height: 0.2rem;
-    margin: 0.2rem 0.04rem;
-    box-sizing: border-box;
-    border-radius: 50%;
-    background: #dddddd;
-}
-.banner .pagination .active{
-    border: 0.032rem solid #1ab4c3;
-    background: #fff;
-}
-
 /*main*/
 .main{
     max-width: 1080px;
@@ -56,7 +14,7 @@
     font-size: 0.56rem;
     line-height:  1.35rem;
     text-align: center;
-    font-weight: normal;
+    font-weight: 500;
     color: #1ab4c3;
 }
 
@@ -65,6 +23,65 @@
     width: 100%;
     height: 100%;
 }
+
+
+/*banner*/
+.swiper-container{
+    position: relative;
+    height: 5.6rem;
+    margin: 0 auto;    
+    overflow: hidden;
+    z-index: 1;
+}
+
+.swiper-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display:flex;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: transform;
+    box-sizing:content-box;
+}
+
+.swiper-slide{
+    -webkit-flex-shrink:0;
+    flex-shrink:0;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-container-android .swiper-slide, .swiper-wrapper{
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.swiper-pagination{
+    text-align: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    z-index: 10;
+    text-align: center;
+}
+ 
+.swiper-pagination-bullet{
+    display: inline-block;
+    width: 0.2rem;
+    height: 0.2rem;
+    margin:0 0.1rem;
+    border-radius: 50%;
+    background: #ddd;
+    box-sizing: border-box;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #fff;
+    border :0.035rem solid #1ab4c3;
+}
+
 
 /*physical*/
 .physical{
@@ -207,7 +224,6 @@
 .online-ask form ul li{
     position: relative;
     width: 100%;
-    height: 1.1rem;
     margin-bottom: 0.4rem;
     line-height: 1.1rem;
     box-sizing: border-box;
@@ -215,7 +231,7 @@
 
 .online-ask form ul li .txt{ 
     width: 100%;
-    height: 100%;
+    height: 1.1rem;
     padding: 0;
     font-size: 0.4rem;
     line-height: 1.1rem;
@@ -225,7 +241,7 @@
 
 .online-ask form ul li .submit{
     width: 100%;
-    height: 100%;
+    height: 1.1rem;
     padding: 0;
     color: #fff;
     font-size: 0.4rem;
@@ -241,14 +257,28 @@
     position: relative;
 }
 
-.online-ask form ul li .down{
+.online-ask form ul li .select-down{
+    display: block;
     position: absolute;
-    top: 0;
+    top: 50%;
     right: 0.4rem;
-    font-size: 0.4rem;
-    cursor: pointer;
+    margin-top: -0.05rem;
+    margin-right: -0.09rem;
+    width: 0.19rem;
+    height: 0.10rem;
+    background: url(../images/select.png) no-repeat;
+    background-size: cover;
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
 }
-.online-ask form ul li .down:before{ content: "\e603";}
+
+.online-ask form ul li .select-up{
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    -webkit-transform: rotate(180deg); 
+    transform: rotate(180deg); 
+}
+
 
 #serve-container{
     position: absolute;
@@ -258,6 +288,7 @@
     width: 100%;
     background: #f3f3f3;
     border: 1px solid #dfdfdf;
+    display: none;
 }
 
 #serve-container ul .option{
@@ -268,3 +299,4 @@
     border: none;
     cursor: pointer;
 }
+

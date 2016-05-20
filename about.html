@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>关于我们</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <script src="js/common.js"></script>
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/touch.min.js"></script>
+</head>
+<body>
+
+    <!-- menu -->
+    <nav id="menu" class="mm-menu">
+        <div class="menu_logo"><a href="#"></a></div>
+        <ul class="menu_nav">
+            <li><a href="index.html"><i class="iconfont home"></i>首页<i class="iconfont next"></i></a></li>
+            <li><a href="japan.html"><i class="iconfont japan"></i>日本医疗<i class="iconfont next"></i></a></li>
+            <li><a href="europe.html"><i class="iconfont europe"></i>欧洲医疗<i class="iconfont next"></i></a></li>
+            <li><a href="case.html"><i class="iconfont case"></i>医疗案例<i class="iconfont next"></i></a></li>
+            <li><a href="about.html"><i class="iconfont about"></i>关于我们<i class="iconfont next"></i></a></li>
+        </ul>
+    </nav>
+
+    <div class="page">
+        <!-- header -->
+        <header id="header">
+            <h1 class="title">关于我们</h1>
+            <a href="#menu" class="iconfont open"></a>
+        </header>
+
+        <!-- main -->
+        <section class="main">
+            <!-- banner -->
+            <section class="banner" style="background: url(images/index_banner05.jpg) no-repeat top center; background-size: cover;">
+                <a href="#"></a>
+            </section>
+
+
+            <section class="team">
+                <p>旭和团队成员均在海外学习、</p>
+                <p>生活多年，拥有精湛的外语能力、</p>
+                <p>深知海外文化、医疗等相关领域的现状及特点。</p>
+                <p>我们的国外合作伙伴均为国际权威顶尖医疗及服务机构</p>
+                <p>更专业、更周到、更放心。</p>
+                <div class="pic-box">
+                    <img src="images/about_03.jpg">
+                </div>
+                <p>选择我们，将为您带来更贴心、更专业的服务，</p>
+                <p>让您在踏上海外之旅的同时，满载着愉悦与健康而归。</p>
+            </section>
+
+            <!-- 就诊环境 -->
+            <section class="pic-item clearfix">
+                <figure>
+                    <img src="images/about_01.jpg">
+                </figure>
+
+                <figure>
+                    <img src="images/about_02.jpg">
+                </figure>
+
+                <figure>
+                    <img src="images/about_03.jpg">
+                </figure>
+
+                <figure>
+                    <img src="images/about_04.jpg">
+                </figure>
+            </section>
+
+            <!-- 就诊环境 -->
+            <section class="contact">
+                <ul>
+                    <li>电话<span class="phone">13811646775</span></li>
+                    <li>邮箱<span class="email">191518794@QQ.com</span></li>
+                    <li>传真<span class="fax">010-82888288</span></li>
+                    <li>地址<span class="address">北京市朝阳区建国路79号</span><span>华贸写字楼2座21层</span></li>
+                </ul>
+                <dl class="logobox">
+                    <dt><img src="images/about_logo.png"></dt>
+                    <dd>旭和海外医疗服务团队全程为你而“战”</dd>
+                </dl>
+            </section>
+        </section>
+
+        <!-- footer -->
+        <footer class="clearfix">
+            <div class="qrcode"><img src="images/qrcode.png"></div>
+            <p>客服热线</p>
+            <p><strong>400-880-6688</strong></p>
+            <p>Copyright © 北京旭和科技. All Rights Reserved. </p>
+            <p>京ICP备123456789号</p>
+        </footer>
+    </div>
+
+<script type="text/javascript">
+    //侧栏导航
+    touch.on('.open', ' tap', function(){
+      menuSilder();
+    });  
+
+    //导航滑动
+    function menuSilder(){
+         var $width = $('#menu').width();
+         var speed=400;
+
+        $('#menu').css('height','100%');
+
+        if ($('.page').position().left>=0) {
+            $('html').addClass('mm-html');
+            $('.page').animate({
+                left: -$width+'px', 
+            },speed);            
+        }else{
+            $('.page').animate({
+                left: 0,
+            },speed,function(){
+                $('html').removeClass('mm-html');
+            });
+        }
+    } 
+</script>
+</body>
+</html>

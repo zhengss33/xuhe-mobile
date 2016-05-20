@@ -1,0 +1,84 @@
+/*header*/
+#header .title{
+    display: inline-block;
+    color: #1ab4c3;
+    font-size: 0.5rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+/*main*/
+.main{
+    max-width: 1080px;
+    margin: 0 auto;
+    color: #555;
+}
+
+.main a{
+    color: #555;
+}
+
+.main h2{
+    height: 1.35rem;
+    font-size: 0.56rem;
+    line-height:  1.35rem;
+    text-align: center;
+    font-weight: 500;
+    color: #1ab4c3;
+}
+
+.main .content figure a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*banner*/
+.banner{
+    width: 100%;
+    height: 5.6rem;
+}
+
+.banner a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*hospital*/
+.case{
+    clear: both;
+    margin: 0.6rem 0 1.5rem;
+}
+
+.case .content{
+    margin-top: 0.2rem;
+}
+
+.case-item {
+    margin-bottom: 0.7rem;
+}
+
+.case-item .pic-box{
+    position: relative;
+    width: 100%;
+    height: 5.4rem;
+}
+
+.case-item .pic-box img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.case-intro{
+    width: 89%;
+    padding: 0.4rem 0;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.case-intro h3{
+    font-size: 0.45rem;
+    font-weight: 500;
+}

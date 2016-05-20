@@ -1,4 +1,6 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,section, article, aside, header, footer, nav, dialog, figure,menu,hgroup,iframe{ margin:0; padding:0; border:0; -webkit-font-smoothing:antialiased; font-family:"Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif; }
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,section, article, aside, header, footer, nav, dialog, figure,menu,hgroup,iframe{
+ margin:0; padding:0; border:0; -webkit-font-smoothing:antialiased; font-family:Tahoma, Helvetica, "Microsoft Yahei", "微软雅黑", Arial, STHeiti;; 
+}
 html{ -webkit-text-size-adjust:none;}
 body{ font-size:12px; line-height:24px; background:#fff;  -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased;  font-smoothing: antialiased;  color:#333;}
 input,textarea{ resize:none; font-family:"Microsoft YaHei"; border-radius:0; background: #fff;border: 0; -webkit-appearance: none;}
