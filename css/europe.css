@@ -7,13 +7,6 @@
     text-align: center;
 }
 
-/*banner*/
-.banner{
-    width: 100%;
-    height: 5.6rem;
-}
-
-
 /*main*/
 .main{
     max-width: 1080px;
@@ -39,6 +32,19 @@
     width: 100%;
     height: 100%;
 }
+
+/*banner*/
+.banner{
+    width: 100%;
+    height: 5.6rem;
+}
+
+.banner a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 
 /*medical*/
 .medical{

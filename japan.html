@@ -8,21 +8,22 @@
     <meta name="format-detection" content="email=no"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-    <link rel="stylesheet" type="text/css" href="css/base.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/japan.css">
     <script src="js/common.js"></script>
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/touch.min.js"></script>
 </head>
 <body>
     <!-- menu -->
     <nav id="menu" class="mm-menu">
         <div class="menu_logo"><a href="#"></a></div>
         <ul class="menu_nav">
-            <li><a href="#"><i class="iconfont home"></i>首页<i class="iconfont next"></i></a></li>
-            <li><a href="#"><i class="iconfont japan"></i>日本医疗<i class="iconfont next"></i></a></li>
-            <li><a href="#"><i class="iconfont europe"></i>欧洲医疗<i class="iconfont next"></i></a></li>
-            <li><a href="#"><i class="iconfont case"></i>医疗案例<i class="iconfont next"></i></a></li>
-            <li><a href="#"><i class="iconfont about"></i>关于我们<i class="iconfont next"></i></a></li>
+            <li><a href="index.html"><i class="iconfont home"></i>首页<i class="iconfont next"></i></a></li>
+            <li><a href="japan.html"><i class="iconfont japan"></i>日本医疗<i class="iconfont next"></i></a></li>
+            <li><a href="europe.html"><i class="iconfont europe"></i>欧洲医疗<i class="iconfont next"></i></a></li>
+            <li><a href="case.html"><i class="iconfont case"></i>医疗案例<i class="iconfont next"></i></a></li>
+            <li><a href="about.html"><i class="iconfont about"></i>关于我们<i class="iconfont next"></i></a></li>
         </ul>
     </nav>
 
@@ -33,14 +34,14 @@
         <h1 class="title">日本医疗</h1>
         <a href="#menu" class="iconfont open"></a>
     </header>
-
-    <!-- banner -->
-    <section class="banner" style="background: url(images/index_banner02.jpg) no-repeat top center; background-size: cover;">
-        <a href="#"></a>
-    </section>
-
+    
     <!-- main -->
     <section class="main">
+        <!-- banner -->
+        <section class="banner" style="background: url(images/index_banner02.jpg) no-repeat top center; background-size: cover;">
+            <a href="#"></a>
+        </section>
+
         <!-- 日本医疗 -->
         <section class="medical clearfix">
             <div class="medical-info">
@@ -209,8 +210,32 @@
     </footer>
 </div>
 
+<script type="text/javascript">
+    //侧栏导航
+    touch.on('.open', ' tap', function(){
+      menuSilder();
+    });  
 
+    //导航滑动
+    function menuSilder(){
+        var $width = $('#menu').width();
+        var speed = 400;
 
+        $('#menu').css('height','100%');
 
+        if ($('.page').position().left>=0) {
+            $('html').addClass('mm-html');
+            $('.page').animate({
+                left: -$width+'px', 
+            },speed);            
+        }else{
+            $('.page').animate({
+                left: 0,
+            },speed,function(){
+                $('html').removeClass('mm-html');
+            });
+        }
+    } 
+</script>
 </body>
 </html>
